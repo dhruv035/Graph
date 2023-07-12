@@ -1,12 +1,8 @@
 sources:
-  - name: uniswapv2
+  - name: enzyme-vault
     handler:
       graphql:
-        endpoint: https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2
-  - name: compoundv2
-    handler:
-      graphql:
-        endpoint: https://api.thegraph.com/subgraphs/name/graphprotocol/compound-v2
+        endpoint: https://gateway.thegraph.com/api/{env.API_KEY}/subgraphs/id/5fQN1uMK6uEswACUmN7HmvdMr3QLRhYDBrX8GngbR2Tn
 
 documents:
   - ./queries.graphql
