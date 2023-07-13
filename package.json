@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx graphclient build && npx tsc",
     "start": "node dist/index.js"
-
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,7 @@
     "@graphprotocol/client-cli": "^3.0.0",
     "@types/express": "^4.17.17",
     "@types/node": "^20.3.3",
+    "dotenv": "^16.3.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {

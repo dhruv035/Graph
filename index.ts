@@ -1,5 +1,7 @@
 import express, { Express, Request, Response } from 'express';
 import { ExampleQueryDocument, ExampleQueryQuery, execute } from './.graphclient/index'
+import dotenv from "dotenv"
+dotenv.config({ path: './.env' });
 const app: Express = express();
 app.get('/', (req: Request, res: Response) => {
     execute(ExampleQueryDocument, {}).then((result)=>{
